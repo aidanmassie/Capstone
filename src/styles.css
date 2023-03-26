@@ -1,27 +1,27 @@
 body {
-    font-family: sans-serif;
-    max-width: 400px;
-    margin: auto;
-    overflow: hidden;
-    background-color: #f9fdf5;
-    touch-action: none !important;
-    font-family: "IBM Plex Mono", monospace !important;
-  }
-  
-  canvas {
-    width: calc(100% - 100px);
-    z-index: 2;
-  }
-  
-  input {
-    border-width: 5px;
-    margin: 2px;
-  }
-  
-  button {
+  font-family: sans-serif;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  background-color: #f9fdf5;
+  touch-action: none !important;
+  font-family: "IBM Plex Mono", monospace !important;
+}
+
+canvas {
+  width: calc(100vw);
+  z-index: 2;
+}
+
+input {
+  border-width: 5px;
+  margin: 2px;
+}
+
+button {
   font-family: "IBM Plex Mono", monospace;
-  -webkit-border-radius: 3px;  
-  -moz-border-radius: 3px;  
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   border-color: #64a999;
   border-style: solid;
@@ -30,52 +30,57 @@ body {
   color: #64a999;
   position: relative;
   background-color: #f9fdf5;
-  }
-  
-  button:hover {
-    background-color: #FFFFFF;
-  }
-  
-  button:focus, input:focus {
-    outline: 0;
-  }
-  
-  p {
-    font-size: 12px;
-    line-height: 1rem;
-    text-align: center;
-  }
-  
-  a {
-    color: #64a999;
-    font-style: italic;
-  }
-  
-  /* .test {
-    border-style: solid;
-    border-width: .5px;
-    border-color: red;
-  } */
-  
-  #bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #audio, #buttons, #make, #msg-in, #msg-out {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #msg-in {
-    display: none;  
-    /* display: flex; */
-    flex-direction: column;
-   }
-  
-  /* why does the font family need to be reiterated here? */
-  #message {
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+p {
+  font-size: 12px;
+  line-height: 1rem;
+  text-align: center;
+}
+
+a {
+  color: #64a999;
+  font-style: italic;
+}
+
+/* .test {
+  border-style: solid;
+  border-width: .5px;
+  border-color: red;
+} */
+
+#bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#audio,
+#buttons,
+#make,
+#msg-in,
+#msg-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#msg-in {
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+}
+
+/* why does the font family need to be reiterated here? */
+#message {
   font-family: "IBM Plex Mono", monospace;
   border-width: 2px;
   border-color: #64a999;
@@ -85,30 +90,30 @@ body {
   color: #000000;
   background-color: #f9fdf5;
   width: 200px;
-  }
-  
-  #msg-out {
-    display: none;
-    font-style: italic;
-  }
-  
-  #make {
-    display: none;
-  }
-  
-  #app {
-    margin-top: 10px;
-    width: 100%;
-    /* height: 100%; */
-    display: flex;
-    align-items: center;
-  }
-  
-  input.off {
-    filter: grayscale(100%);
-    filter: contrast(0%);
-  }
-  
-  #music {
-    display: none;
-  }
+}
+
+#msg-out {
+  display: none;
+  font-style: italic;
+}
+
+#make {
+  display: none;
+}
+
+#app {
+  margin-top: 10px;
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+}
+
+input.off {
+  filter: grayscale(100%);
+  filter: contrast(0%);
+}
+
+#music {
+  display: none;
+}
