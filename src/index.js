@@ -25,29 +25,30 @@ let activeButton = 0;
 
 //Identifying the assets
 let frameUrls = [
-  "assets/frame1.png",
-  "assets/frame2.png",
-  "assets/frame3.png",
-  "assets/frame4.png",
-  "assets/frame5.png"
+  "assets/Red.png",
+  "assets/Orange.png",
+  "assets/Yellow.png",
+  "assets/Green.png",
+  "assets/Blue.png",
+  "assets/Purple.png"
 ];
 
 let skyUrls = [
-  "assets/sky1.png",
-  "assets/sky2.png",
-  "assets/sky3.png",
-  "assets/sky4.png",
-  "assets/sky5.png"
+  "assets/Red.png",
+  "assets/Orange.png",
+  "assets/Yellow.png",
+  "assets/Green.png",
+  "assets/Blue.png",
+  "assets/Purple.png"
 ];
 
 let extraUrls = [
-  "assets/empty.png",
-  "assets/extra1.png",
-  "assets/extra2.png",
-  "assets/extra3.png",
-  "assets/extra4.png",
-  "assets/extra5.png",
-  "assets/extra6.png"
+  "assets/Red.png",
+  "assets/Orange.png",
+  "assets/Yellow.png",
+  "assets/Green.png",
+  "assets/Blue.png",
+  "assets/Purple.png"
 ];
 
 let audioUrls = [
@@ -79,46 +80,46 @@ extraButton2.addEventListener("click", () => {
 })
 
 
-//Audio stuff
-const audioLeft = document.getElementById("audioleft")
-const audioRight = document.getElementById("audioright")
-let audio = new Audio(audioUrls[audioIndex]);
+// //Audio stuff
+// const audioLeft = document.getElementById("audioleft")
+// const audioRight = document.getElementById("audioright")
+// let audio = new Audio(audioUrls[audioIndex]);
 
-soundButton.addEventListener("click", () => {
-  if (soundButton.className != "off") {
-    soundButton.src = "assets/icons/speak.png";
-    soundButton.className = "off";
-    audio.pause();
-  } else {
-    soundButton.src = "assets/icons/speakon.png";
-    soundButton.className = "on";
-    audio.play();
-    audio.loop = true;
-  } return false;
-});
+// soundButton.addEventListener("click", () => {
+//   if (soundButton.className != "off") {
+//     soundButton.src = "assets/icons/speak.png";
+//     soundButton.className = "off";
+//     audio.pause();
+//   } else {
+//     soundButton.src = "assets/icons/speakon.png";
+//     soundButton.className = "on";
+//     audio.play();
+//     audio.loop = true;
+//   } return false;
+// });
 
-audioLeft.addEventListener("click", () => {
-  audioIndex = (audioUrls.length + audioIndex - 1) % audioUrls.length;
-  console.log(audio.src);
-  if (soundButton.className == "on") {
-    audio.pause();
-    audio.src = audioUrls[audioIndex];
-    audio.play();
-  } else {
-    return
-  }
-});
+// audioLeft.addEventListener("click", () => {
+//   audioIndex = (audioUrls.length + audioIndex - 1) % audioUrls.length;
+//   console.log(audio.src);
+//   if (soundButton.className == "on") {
+//     audio.pause();
+//     audio.src = audioUrls[audioIndex];
+//     audio.play();
+//   } else {
+//     return
+//   }
+// });
 
-audioRight.addEventListener("click", () => {
-  audioIndex = (audioUrls.length + audioIndex + 1) % audioUrls.length;
-  if (soundButton.className == "on") {
-    audio.pause();
-    audio.src = audioUrls[audioIndex];
-    audio.play();
-  } else {
-    return
-  }
-});
+// audioRight.addEventListener("click", () => {
+//   audioIndex = (audioUrls.length + audioIndex + 1) % audioUrls.length;
+//   if (soundButton.className == "on") {
+//     audio.pause();
+//     audio.src = audioUrls[audioIndex];
+//     audio.play();
+//   } else {
+//     return
+//   }
+// });
 
 //Menu buttons
 function buttonPresses() {
